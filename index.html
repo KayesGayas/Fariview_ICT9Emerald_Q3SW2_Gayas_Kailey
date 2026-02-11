@@ -10,7 +10,7 @@
 <style>
 
 body {
-    background: url("https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b") no-repeat center center fixed;
+    background: url("https://cdn.shopify.com/s/files/1/0427/1797/0585/files/Sneaker_Care.jpg?v=1737523871") no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -83,7 +83,7 @@ body {
 
 
 <div class="glass-box">
-    <h3>Want a gaming laptop?</h3>
+    <h3>Wanna buy new shoes for Basketball/Volleyball?</h3>
     <p>Enter your budget and let's find the right one for you!</p>
 
     <input type="number" id="budget" class="form-control w-50 mx-auto" placeholder="Enter here...">
@@ -99,9 +99,9 @@ body {
 <div class="col-md-4">
     <div class="panel text-center">
         <h5>Brand & Discounts</h5>
-        <button class="btn btn-outline-light btn-brand">Acer</button>
-        <button class="btn btn-outline-light btn-brand">Asus</button>
-        <button class="btn btn-outline-light btn-brand">Lenovo</button>
+        <button class="btn btn-outline-light btn-brand">A'ja Ones</button>
+        <button class="btn btn-outline-light btn-brand">Sabrina 2</button>
+        <button class="btn btn-outline-light btn-brand">Kobe 6 protro</button>
 
         <hr>
         <p>You are eligible for: ₱<span id="discount">0.00</span></p>
@@ -113,14 +113,14 @@ body {
         <h5>Store Location</h5>
 
         <div class="store-logo">
-            <strong class="text-dark">VillMan Computers</strong>
+            <strong class="text-dark">Nike</strong>
         </div>
-        <p>Cyberzone, SM City Fairview</p>
+        <p>SM City North, SM City Fairview</p>
 
         <div class="store-logo">
-            <strong class="text-dark">Silicon Valley</strong>
+            <strong class="text-dark">Footlocker</strong>
         </div>
-        <p>SM City North EDSA, Quezon City</p>
+        <p>SM City North EDSA, Trinoma</p>
     </div>
 </div>
 
@@ -137,9 +137,9 @@ body {
 
 // Gaming laptop data
 const laptops = [
-    { brand: "Acer", price: 60000 },
-    { brand: "Asus", price: 80000 },
-    { brand: "Lenovo", price: 70000 }
+    { brand: "A'ja Ones", price: 6000 },
+    { brand: "Sabrina 2", price: 9000 },
+    { brand: "Kobe 6 protro", price: 10000 }
 ];
 
 // Function to check budget
@@ -149,19 +149,24 @@ function checkBudget() {
     let discount = 0;
 
     // Operator example
-    if (budget >= 80000) {
+     if (budget >= 10000) {
         discount = budget * 0.10;
         document.getElementById("result").innerHTML =
-        "You can afford high-end gaming laptops!";
+        "You can afford Kobe 6 protro";
     }
-    else if (budget >= 60000) {
+    if (budget >= 6000) {
+        discount = budget * 0.10;
+        document.getElementById("result").innerHTML =
+        "You can afford A'ja Ones";
+    }
+    else if (budget >= 9000) {
         discount = budget * 0.05;
         document.getElementById("result").innerHTML =
-        "You can afford mid-range gaming laptops!";
+        "You can afford Sabrina 2";
     }
     else {
         document.getElementById("result").innerHTML =
-        "Budget too low for gaming laptops.";
+        "Budget too low for Pro Basketball/Volleyball shoes";
     }
 
     document.getElementById("discount").innerHTML = discount.toFixed(2);
@@ -173,3 +178,7 @@ function checkBudget() {
 
 </body>
 </html>
+
+//Sources 
+Maloles, F. (2025, January 22). runnr Now at Cagayan De Oro! Runnr. https://runnr.com.ph/blogs/news/runnr-now-at-cagayan-de-oro?srsltid=AfmBOopRuwGIDq2jvf7A89-YEMIJF50EXIbmhaCuU-iyyWKgUbg9_IXo
+
